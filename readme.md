@@ -18,7 +18,7 @@ module-fast-group 顶层项目
 ----module-lib	公共包
 ----module-document	文档管理
 ----module-web	前台页面
---------module-business-person	个人前台页面
+--------module-web-admin	个人前台页面
 ```
 
 ## 模块介绍
@@ -36,5 +36,5 @@ module-fast-group 顶层项目
 |[module-business-person-service](module-business-person-service)|个人中心service模块| 10%|
 |[module-service-auth](module-service-auth)|业务中心-权限模块| 0%|
 |[module-web](module-web)|页面管理| 0%|
-|[module-business-person](module-business-person)| 个人前台页面|  0%|
+|[module-web-admin](module-web-admin)| 个人前台页面|  0%|
 |[module-fast-group](module-fast-group)|顶层pom管理| 0%|
