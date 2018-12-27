@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>priv.dengjl</groupId>
+		<artifactId>module-fast-group</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>module-common-util</artifactId>
+	<name>module-common-util</name>
+	<description>独立一个模块，不然到最后会出现功能一样的类</description>
+	<dependencies>
+		<dependency>
+			<groupId>priv.dengjl</groupId>
+			<artifactId>module-lib</artifactId>
+		</dependency>
+	</dependencies>
+</project>

@@ -1,0 +1,21 @@
+drop table if exists student;
+
+/*==============================================================*/
+/* Table: student                                               */
+/*==============================================================*/
+create table student
+(
+   NO                   int(4) not null comment '学号',
+   LOGIN_PWD            varchar(20) comment '登录密码',
+   NAME                 varchar(20) comment '学生姓名',
+   SEX                  tinyint(1) comment '学生性别',
+   GRADE_ID             int(11) comment '成绩ID',
+   PHONE                varchar(50) comment '学生电话',
+   ADDRESS              varchar(255) comment '学生地址',
+   BIRTHDATE            datetime comment '出生日期',
+   EMAIL                varchar(50) comment '学生邮箱',
+   IDENTITY_CARD        varchar(20) comment '身份证',
+   primary key (NO)
+);
+
+alter table student comment '学生信息';

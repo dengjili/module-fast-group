@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+         PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+         "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+	<!-- ojdbc的jar包 -->
+	<classPathEntry
+		location="C:/TempData/maven-workspace/mysql/mysql-connector-java/8.0.12/mysql-connector-java-8.0.12.jar" />
+	<context id="my" targetRuntime="MyBatis3">
+		<commentGenerator>
+			<property name="suppressDate" value="false" />
+			<property name="suppressAllComments" value="true" />
+		</commentGenerator>
+		<!-- 数据库连接信息 -->
+		<jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
+			connectionURL="jdbc:mysql://127.0.0.1:3306/test" userId="root"
+			password="root" />
+		
+		<!-- java数据类型与数据库类型映射,非必须 -->
+		<javaTypeResolver>
+			<property name="" value=""/>
+		</javaTypeResolver>
+
+		<!-- model生成路径 -->
+		<javaModelGenerator targetPackage="priv.module.business.person.bean"
+			targetProject="C:/TempData/my-workspace/module-fast-group/module-business/module-business-person/module-business-person-dao/src/main/java">
+			<property name="enableSubPackages" value="true" />
+			<property name="trimStrings" value="true" />
+		</javaModelGenerator>
+		<!-- 映射xml文件生成路径 -->
+		<sqlMapGenerator targetPackage="priv.module.business.person.mapping"
+			targetProject="C:/TempData/my-workspace/module-fast-group/module-business/module-business-person/module-business-person-dao/src/main/java">
+			<property name="enableSubPackages" value="true" />
+		</sqlMapGenerator>
+		<!-- 
+			type="ANNOTATEDMAPPER",生成Java Model 和基于注解的Mapper对象  
+			type="MIXEDMAPPER",生成基于注解的Java Model 和相应的Mapper对象  
+			type="XMLMAPPER",生成SQLMap XML文件和独立的Mapper接口
+		 -->
+		<javaClientGenerator targetPackage="priv.module.business.person.dao"
+			targetProject="C:/TempData/my-workspace/module-fast-group/module-business/module-business-person/module-business-person-dao/src/main/java" type="XMLMAPPER">
+			<property name="enableSubPackages" value="true" />
+		</javaClientGenerator>
+
+		<!-- 目标表，如果有多个表就将此段拷贝分别配置，禁止生成Example,前期以熟练mybatis为主 -->
+		
+		<!-- table 可进行以下设置 -->
+		<table tableName="user_red_packet" domainObjectName="UserRedPacketBean"
+			enableInsert="false"
+			enableCountByExample="false" 
+			enableUpdateByExample="false"
+            enableDeleteByExample="false" 
+            enableSelectByExample="false"
+            selectByExampleQueryId="false">
+		</table>
+	</context>
+</generatorConfiguration>

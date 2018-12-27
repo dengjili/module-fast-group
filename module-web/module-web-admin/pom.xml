@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>priv.dengjl</groupId>
+		<artifactId>module-web</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>module-web-admin</artifactId>
+	<packaging>war</packaging>
+	<name>module-web-admin</name>
+	<description>管理员使用页面</description>
+
+	<dependencies>
+		<dependency>
+			<groupId>priv.dengjl</groupId>
+			<artifactId>module-business-person-service</artifactId>
+		</dependency>
+	</dependencies>
+</project>

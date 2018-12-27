@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--使用注解-->
+    <mvc:annotation-driven/>
+    
+    <!-- 自动扫描控制器类 -->
+    <context:component-scan base-package="priv.module.web.*.controller"/>
+    <!-- 自动扫描控制器aop配置类 -->
+    <context:component-scan base-package="priv.module.web.admin.config"/>
+
+    <!--视图解析器-->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <!--指定视图的前缀和后缀，Controller返回的String类型与这里的前后缀拼接，构成返回的视图页面地址-->
+        <property name="prefix" value="/WEB-INF/html/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+    <!--静态资源配置 [css js]-->
+    <mvc:resources location="/static-resource/" mapping="/static-resource/**"/>
+    <!--静态html配置 [html]-->
+    <mvc:resources location="/html/" mapping="/html/**"/>
+    
+</beans>
