@@ -1,0 +1,18 @@
+drop table if exists user;
+
+/*==============================================================*/
+/* Table: user                                                  */
+/*==============================================================*/
+create table user
+(
+   ID                   int(4) not null comment '用户ID',
+   DISPLAY              varchar(20) comment '用户名称',
+   NAME                 varchar(20) comment '用户姓名',
+   PHONE                varchar(50) comment '用户电话',
+   ADDRESS              varchar(255) comment '用户地址',
+   BIRTHDATE            datetime comment '用户生日',
+   REMARK               varchar(255) comment '备注',
+   primary key (ID)
+);
+
+alter table user comment '用户信息';

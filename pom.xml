@@ -14,6 +14,7 @@
 		<module>module-common-util</module>
 		<module>module-business</module>
 		<module>module-web</module>
+		<module>module-document</module>
 	</modules>
 
 	<!-- 统一包版本声明 -->
