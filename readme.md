@@ -3,7 +3,7 @@
 
 
 ## 工程关系
-![工程关系](https://raw.githubusercontent.com/dengjili/module-web/master/project-relation.jpg)
+![工程关系](https://raw.githubusercontent.com/dengjili/module-fast-group/master/module-document/picture/structure.jpg)
 
 ## 模块结构
 ```
